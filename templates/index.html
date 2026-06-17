@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>AI Smart Farming</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#e8ffe8;
+padding:30px;
+}
+
+.container{
+background:white;
+padding:20px;
+border-radius:20px;
+box-shadow:0 0 10px gray;
+}
+
+h1{
+color:green;
+}
+
+button{
+background:green;
+color:white;
+padding:10px;
+border:none;
+border-radius:10px;
+}
+
+.card{
+margin-top:20px;
+padding:15px;
+background:#f0fff0;
+border-radius:15px;
+}
+
+input,select{
+padding:8px;
+margin:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🌾 AI Smart Farming & Crop Prediction</h1>
+
+<div class="card">
+
+<h2>Crop Prediction</h2>
+
+<form method="POST">
+
+<label>Soil Type</label>
+
+<select name="soil">
+<option>Loamy</option>
+<option>Clay</option>
+<option>Black</option>
+</select>
+
+<br><br>
+
+<label>Season</label>
+
+<select name="season">
+<option>Winter</option>
+<option>Rainy</option>
+<option>Summer</option>
+</select>
+
+<br><br>
+
+<button name="predict">
+Predict Crop
+</button>
+
+</form>
+
+<h3>{{ prediction }}</h3>
+
+</div>
+
+<div class="card">
+
+<h2>🤖 Smart Farming Assistant</h2>
+
+<form method="POST">
+
+<input
+type="text"
+name="question"
+placeholder="Ask a farming question"
+required>
+
+<button name="chat">
+Ask
+</button>
+
+</form>
+
+<h3>{{ chatbot_response }}</h3>
+
+</div>
+
+<div class="card">
+<h2>💧 Irrigation Advice</h2>
+<p>Use drip irrigation to save water.</p>
+</div>
+
+<div class="card">
+<h2>🌱 Fertilizer Recommendation</h2>
+<p>Organic compost improves soil fertility.</p>
+</div>
+
+<div class="card">
+<h2>🦠 Disease Prevention</h2>
+<p>Inspect leaves every week.</p>
+</div>
+
+<div class="card">
+<h2>☁ Weather Tips</h2>
+<p>Avoid fertilizer application before rainfall.</p>
+</div>
+
+<div class="card">
+<h2>💰 Market Information</h2>
+<p>Rice ₹2400 per quintal</p>
+<p>Wheat ₹2300 per quintal</p>
+</div>
+
+</div>
+
+</body>
+</html>
